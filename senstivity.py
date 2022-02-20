@@ -57,6 +57,14 @@ def Nperv(x,a):
     inp[sections.SUBAREAS][x].N_Perv = a
     return a
 #%%
+def Sperv(x,a):
+    inp[sections.SUBAREAS][x].S_Perv = a
+    return a
+#%%
+def Simperv(x,a):
+    inp[sections.SUBAREAS][x].S_Imperv = a
+    return a
+#%%
 def manch(x,a):
     inp[sections.TRANSECTS][x].roughness_channel = a
     return a
@@ -72,6 +80,8 @@ sw = []
 sN = []
 Nimpl = []
 Npervl = []
+Simpl = []
+Sprl = []
 for i in catchment:
     rd = inp[sections.SUBCATCHMENTS][i].Width
     sw.append(rd)
@@ -81,7 +91,12 @@ for i in catchment:
     Nimpl.append(im)
     per = inp[sections.SUBAREAS][i].N_Perv
     Npervl.append(per)
-    print(Npervl)
+    Sim = inp[sections.SUBAREAS][i].S_Imperv
+    Simpl.append(Sim)
+    Spr = inp[sections.SUBAREAS][i].S_Perv
+    Sprl.append(Spr)
+    print(Sprl)
+    print(Simpl)
 sw1 = []
 sN1 = []
 for i in sw:
@@ -142,13 +157,17 @@ def runf(fn):
         return df
 #%%
 import os
-def inpfi(cnu, Nimplr, Nperlv, n_chan, n_right, n_left, fn):
+def inpfi(cnu, Nimplr, Nperlv, Simplr, Spervl, n_chan, n_right, n_left, fn):
     for i,j in zip(catchment, cnu):
         cn(i,j)
     for e,f in zip(catchment, Nimplr):
         Nimp(e,f)
     for g,h in zip(catchment,Nperlv):
         Nperv(g,h)
+    for m,n in zip(catchment,Simplr):
+        Simperv(m,n)
+    for m1,n1 in zip(catchment,Spervl):
+        Sperv(m1,n1)
     for k, l in zip(Cond, n_chan):
         manch(k,l)
     for a, b in zip(Cond, n_right):
@@ -169,6 +188,8 @@ for i in catchment:
 def modelswmmi(a,b,c,d,e,f,g,
                a1, b1, c1, d1, e1, f1, g1,
                a2, b2, c2, d2, e2, f2, g2,
+               a3, b3, c3, d3, e3, f3, g3,
+               a4, b4, c4, d4, e4, f4, g4,
                i,j,k,l, h, m, n,o, p, q, r, s, fn):
     CNU = [cn('ws-128',(sN[0]+a)), cn('ws-148',(sN[1]+b)),cn('ws-159',(sN[2]+c)), cn('ws-71',(sN[3]+d)), cn('ws-84',(sN[4]+e)),
            cn('ws-161',(sN[5]+f)), cn('ws-17',(sN[6]+g))]
@@ -176,18 +197,26 @@ def modelswmmi(a,b,c,d,e,f,g,
            Nimp('ws-161',(Nimpl[5]+f1)), Nimp('ws-17',(Nimpl[6]+g1))]
     n_per = [Nperv('ws-128',(Npervl[0]+a2)), Nperv('ws-148',(Npervl[1]+b2)),Nperv('ws-159',(Npervl[2]+c2)), Nperv('ws-71',(Npervl[3]+d2)), Nperv('ws-84',(Npervl[4]+e2)),
            Nperv('ws-161',(Npervl[5]+f2)), Nperv('ws-17',(Npervl[6]+g2))]
+    S_imper =[Nperv('ws-128',(Simpl[0]+a3)), Nperv('ws-148',(Simpl[1]+b3)),Nperv('ws-159',(Simpl[2]+c3)), Nperv('ws-71',(Simpl[3]+d3)), Nperv('ws-84',(Simpl[4]+e3)),
+           Nperv('ws-161',(Simpl[5]+f3)), Nperv('ws-17',(Simpl[6]+g3))]
+    S_per = [Sperv('ws-128',(Sprl[0]+a4)), Sperv('ws-148',(Sprl[1]+b4)),Sperv('ws-159',(Sprl[2]+c4)), Sperv('ws-71',(Sprl[3]+d4)), Sperv('ws-84',(Sprl[4]+e4)),
+           Sperv('ws-161',(Sprl[5]+f4)), Sperv('ws-17',(Sprl[6]+g4))]
     n_ch = [manch('c67',(n_chan[0]+i)),(manch('c68',n_chan[1])+j), (manch('c70',n_chan[2])+k), (manch('c71',n_chan[3])+l)]
     n_r = [manchr('c67',(n_right[0]+h)), manchr('c68',(n_right[1]+m)), manchr('c70',(n_right[2]+n)), manchr('c71',(n_right[3]+o))]
     n_l = [manchl('c67',(n_left[0]+p)), manchl('c68',(n_left[1]+q)), manchl('c70',(n_left[2]+r)), manchl('c71',(n_left[3]+s))]
-    inpfi(CNU,n_imp, n_per, n_ch,n_r,n_l, fn)
+    inpfi(CNU,n_imp, n_per, S_imper,S_per, n_ch,n_r,n_l, fn)
     df = runf(fn)
     r2 = dis(df["S1 Discharge"], vf_dis1)
     return r2
 #%%
-def fr33(a, b, c, d, e, f, g,a1, b1, c1, d1, e1, f1, g1, a2, b2, c2, d2, e2, f2, g2,i,j,k,l, h, m, n,o,p, q, r, s):
+def fr47(a, b, c, d, e, f, g,a1, b1, c1, d1, e1, f1, g1, a2, b2, c2, d2, e2, f2, g2,
+         a3, b3, c3, d3, e3, f3, g3, a4, b4, c4, d4, e4, f4, g4,
+         i,j,k,l, h, m, n,o,p, q, r, s):
     # print(params)  # <-- you'll see that params is a NumPy array
     # <-- for readability you may wish to assign names to the component variables
-    r2 = modelswmmi(a, b, c, d,  e, f, g, a1, b1, c1, d1, e1, f1, g1,a2, b2, c2, d2, e2, f2, g2, i,j,k,l, h, m, n,o,p, q, r, s, "cal2")
+    r2 = modelswmmi(a, b, c, d,  e, f, g, a1, b1, c1, d1, e1, f1, g1,a2, b2, c2, d2, e2, f2, g2,
+                    a3, b3, c3, d3, e3, f3, g3, a4, b4, c4, d4, e4, f4, g4,
+                    i,j,k,l, h, m, n,o,p, q, r, s, "cal2")
     return r2
 #%%
 #def modelswmmi(a, fn):
@@ -244,6 +273,20 @@ parameters = [sherpa.Continuous(name='a', range=[-5,10]),
               sherpa.Continuous(name='e2', range=[-0.35,0.6]),
               sherpa.Continuous(name='f2', range=[-0.35,0.6]),
               sherpa.Continuous(name='g2', range=[-0.35,0.6]),
+              sherpa.Continuous(name='a3', range=[-0.5,5.5]),
+              sherpa.Continuous(name='b3', range=[-0.5,5.5]),
+              sherpa.Continuous(name='c3', range=[-0.5,5.5]),
+              sherpa.Continuous(name='d3', range=[-0.5,5.5]),
+              sherpa.Continuous(name='e3', range=[-0.5,5.5]),
+              sherpa.Continuous(name='f3', range=[-0.5,5.5]),
+              sherpa.Continuous(name='g3', range=[-0.5,5.5]),
+              sherpa.Continuous(name='a4', range=[-2.5,3.5]),
+              sherpa.Continuous(name='b4', range=[-2.5,3.5]),
+              sherpa.Continuous(name='c4', range=[-2.5,3.5]),
+              sherpa.Continuous(name='d4', range=[-2.5,3.5]),
+              sherpa.Continuous(name='e4', range=[-2.5,3.5]),
+              sherpa.Continuous(name='f4', range=[-2.5,3.5]),
+              sherpa.Continuous(name='g4', range=[-2.5,3.5]),
               sherpa.Continuous(name='i', range=[-0.005,0.035]),
               sherpa.Continuous(name='j', range=[0.005,0.035]),
               sherpa.Continuous(name='k', range=[-0.005,0.025]),
@@ -276,7 +319,7 @@ for trial in study:
     for i in range(num_iterations):
         
         # access parameters via trial.parameters and id via trial.id
-        pseudo_loss = fr33(trial.parameters['a'], trial.parameters['b'], 
+        pseudo_loss = fr47(trial.parameters['a'], trial.parameters['b'], 
                           trial.parameters['c'], trial.parameters['d'],
                           trial.parameters['e'],trial.parameters['f'],
                           trial.parameters['g'], trial.parameters['a1'],
@@ -287,6 +330,14 @@ for trial in study:
                           trial.parameters['b2'], trial.parameters['c2'],
                           trial.parameters['d2'],trial.parameters['e2'],
                           trial.parameters['f2'],trial.parameters['g2'],
+                          trial.parameters['a3'],
+                          trial.parameters['b3'], trial.parameters['c3'],
+                          trial.parameters['d3'],trial.parameters['e3'],
+                          trial.parameters['f3'],trial.parameters['g3'],
+                          trial.parameters['a4'],
+                          trial.parameters['b4'], trial.parameters['c4'],
+                          trial.parameters['d4'],trial.parameters['e4'],
+                          trial.parameters['f4'],trial.parameters['g4'],
                           trial.parameters['i'],
                           trial.parameters['j'], trial.parameters['k'],
                           trial.parameters['l'], trial.parameters['h'],
