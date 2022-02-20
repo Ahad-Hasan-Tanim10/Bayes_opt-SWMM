@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.metrics import r2_score
 #%%
-Sim = Simulation(r"C:\Users\ATANIM\Documents\Research\Rocky branch\Flood\Calibration.inp")
+Sim = Simulation(r"C:\Users\ATANIM\Documents\Research\Rocky branch\Flood\Calibration_m.inp")
 Sim.execute()
 #%%
 with Sim as sim:
@@ -79,7 +79,7 @@ lines = f.readlines()
 from swmm_api.input_file.section_labels import SUBCATCHMENTS,SUBAREAS, INFILTRATION, TRANSECTS
 from swmm_api.input_file import read_inp_file, SwmmInput, section_labels as sections
 
-inp = read_inp_file(r'C:\Users\ATANIM\Documents\Research\Rocky branch\Flood\Calibration.inp', convert_sections=[SUBCATCHMENTS,SUBAREAS, INFILTRATION, TRANSECTS])  # type: swmm_api.SwmmInput
+inp = read_inp_file(r'C:\Users\ATANIM\Documents\Research\Rocky branch\Flood\Calibration_m.inp', convert_sections=[SUBCATCHMENTS,SUBAREAS, INFILTRATION, TRANSECTS])  # type: swmm_api.SwmmInput
 #%%
 from swmm_api import read_out_file
 
@@ -221,7 +221,7 @@ def inpf7(sw,sn,nimp, nperv,n_chan, n_left, n_right, fn):
         return inp.write_file(os.path.join(f_path, "%s.inp"% fn))
 
 #%%
-with Simulation(r"C:\Users\ATANIM\Documents\Research\Rocky branch\Flood\Calibration.inp") as sim:
+with Simulation(r"C:\Users\ATANIM\Documents\Research\Rocky branch\Flood\Calibration_m.inp") as sim:
     # S1, S2 get the subcatchments by their names
     S1 = Links(sim)["usgs_dis"]
     S2 = Nodes(sim)["43_depth"]
@@ -240,7 +240,7 @@ with Simulation(r"C:\Users\ATANIM\Documents\Research\Rocky branch\Flood\Calibrat
     # using this line below, we turn the 3 columns into a table, called DataFrame using the pandas library. So that we can plot it.
     df = pd.DataFrame({'S1 Discharge': s1_values, 'S2 Depth': s2_values}, index=idx)
 #%%
-df["S1 Discharge"].resample("15min").mean().plot(subplots=True, figsize=(15,4))
+df["S1 Discharge"].resample("5min").mean().plot(subplots=True, figsize=(15,4))
 df["S2 Depth"].resample("15min").mean().plot(subplots=True, figsize=(15,4))   
 #%%    
 dis = df["S1 Discharge"].resample("5min").mean().to_frame()
@@ -254,9 +254,8 @@ index = [0,1]
 d3 = np.delete(d2, index)
 r2_depth = ((np.corrcoef(d1, d3))[0,1])**2
 #%% step
-vf_dep =  pd.read_csv(r'C:\Users\ATANIM\Documents\Research\Rocky branch\Validation\02169506.txt',  sep='\t', index_col='datetime')
-vf_dis = pd.read_csv(r'C:\Users\ATANIM\Documents\Research\Rocky branch\Validation\02169505.txt',  sep='\t', index_col='datetime')
-
+vf_dep =  pd.read_csv(r'C:/Users/ATANIM/Documents/Research/Rocky branch/Validation/02169506depth.txt',  sep='\t', index_col='datetime')
+vf_dis = pd.read_csv(r'C:/Users/ATANIM/Documents/Research/Rocky branch/Validation/02169505discharge.txt',  sep='\t', index_col='datetime')
 #%% Determine the R2 value for water depth simulation
 #mod = df["S2 Depth"], obs = vf_dep
 def dep(mod, obs):
@@ -272,13 +271,13 @@ def dep(mod, obs):
 def dis(mod, obs):
     dep = mod.resample("5min").mean().to_frame()
     d1 = dep["S1 Discharge"].to_numpy()
-    d2 = ((obs["discharge"]*0.0283168).to_numpy())#[:-2]
+    d2 = ((obs["discharge"]*0.027).to_numpy())#[:-2]
     n = d2.size - d1.size
     index = [i for i in range(0,n)]
     d3 = np.delete(d2, index)
-    #r2_dis = ((np.corrcoef(d1, d3))[0,1])**2
-    nse = r2_score(d3, d1)
-    return nse
+    r2_dis = ((np.corrcoef(d1, d3))[0,1])**2
+    #nse = r2_score(d3, d1)
+    return r2_dis
 #mod = df[S1 Discharge], obs = vf_dis
 #%% trial
 def runinp(fn):
@@ -321,7 +320,7 @@ Sim1.execute()
 #for n in range(0, 10):
 #    globals()['list%s' % n] = list(range(n,n+3))
 # run model the required functions are  input file, sub(x,a), cn(x,a), inpf, runf, dep, dep
-inp = read_inp_file(r'C:\Users\ATANIM\Documents\Research\Rocky branch\Flood\Calibration.inp', convert_sections=[SUBCATCHMENTS, INFILTRATION])  # type: swmm_api.SwmmInput
+inp = read_inp_file(r'C:\Users\ATANIM\Documents\Research\Rocky branch\Flood\Calibration_m.inp', convert_sections=[SUBCATCHMENTS, INFILTRATION])  # type: swmm_api.SwmmInput
 inpf(sw, sN7, "cal2")
 
 df = runf( "cal2")
@@ -329,8 +328,13 @@ dep(df["S2 Depth"],vf_dep)
 dis(df["S1 Discharge"], vf_dis)
 
 #%%
-
-
+import hydrofunctions as hf
+start = '2015-06-01'
+end = '2017-07-14'
+herring = hf.NWIS('02169506', 'iv', start, end, file='rb')
+water_depth = herring.df()
+#%matplotlib inline
+water_depth.plot()
 #%%
 def modelswmm(a, b, fn):
     sw7 = [i*a for i in sw]
@@ -391,7 +395,7 @@ def fr4(a, b, c, d):
     r2 = modelswmm4(a, b, c, d, "cal2")
     return r2
 #%%
-a = np.linspace(1.1, 2.5, 40)
+a = np.linspace(1, 2, 40)
 b = np.linspace(1.00,10.00,40)
 
 for i, j in zip (a,b):
