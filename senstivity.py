@@ -77,6 +77,7 @@ def manchl(x,a):
 #%%
 catchment = ['ws-128', 'ws-148', 'ws-159', 'ws-71', 'ws-84', 'ws-161', 'ws-17']  
 sw = []
+slc = []
 sN = []
 Nimpl = []
 Npervl = []
@@ -87,6 +88,8 @@ for i in catchment:
     sw.append(rd)
     cd = inp[sections.INFILTRATION][i].Psi
     sN.append(cd)
+    slci = inp[sections.SUBCATCHMENTS][i].Slope
+    slc.append(slci)
     im = inp[sections.SUBAREAS][i].N_Imperv
     Nimpl.append(im)
     per = inp[sections.SUBAREAS][i].N_Perv
@@ -97,6 +100,8 @@ for i in catchment:
     Sprl.append(Spr)
     print(Sprl)
     print(Simpl)
+    print(sw)
+    print(slc)
 sw1 = []
 sN1 = []
 for i in sw:
@@ -157,13 +162,17 @@ def runf(fn):
         return df
 #%%
 import os
-def inpfi(cnu, Nimplr, Nperlv, Simplr, Spervl, n_chan, n_right, n_left, fn):
+def inpfi(cnu, Nimplr, Nperlv, slcl, swl, Simplr, Spervl, n_chan, n_right, n_left, fn):
     for i,j in zip(catchment, cnu):
         cn(i,j)
     for e,f in zip(catchment, Nimplr):
         Nimp(e,f)
     for g,h in zip(catchment,Nperlv):
         Nperv(g,h)
+    for (m2,n2) in zip (catchment,slcl):
+        sl(m2,n2)
+    for (m3,n3) in zip (catchment,swl):
+        sub(m3,n3)
     for m,n in zip(catchment,Simplr):
         Simperv(m,n)
     for m1,n1 in zip(catchment,Spervl):
@@ -188,6 +197,8 @@ for i in catchment:
 def modelswmmi(a,b,c,d,e,f,g,
                a1, b1, c1, d1, e1, f1, g1,
                a2, b2, c2, d2, e2, f2, g2,
+               a5, b5, c5, d5, e5, f5, g5,
+               a6, b6, c6, d6, e6, f6, g6,
                a3, b3, c3, d3, e3, f3, g3,
                a4, b4, c4, d4, e4, f4, g4,
                i,j,k,l, h, m, n,o, p, q, r, s, fn):
@@ -197,6 +208,10 @@ def modelswmmi(a,b,c,d,e,f,g,
            Nimp('ws-161',(Nimpl[5]+f1)), Nimp('ws-17',(Nimpl[6]+g1))]
     n_per = [Nperv('ws-128',(Npervl[0]+a2)), Nperv('ws-148',(Npervl[1]+b2)),Nperv('ws-159',(Npervl[2]+c2)), Nperv('ws-71',(Npervl[3]+d2)), Nperv('ws-84',(Npervl[4]+e2)),
            Nperv('ws-161',(Npervl[5]+f2)), Nperv('ws-17',(Npervl[6]+g2))]
+    slo = [sl('ws-128',(slc[0]+a5)), sl('ws-148',(slc[1]+b5)),sl('ws-159',(slc[2]+c5)), sl('ws-71',(slc[3]+d5)), sl('ws-84',(slc[4]+e5)),
+           sl('ws-161',(slc[5]+f5)), sl('ws-17',(slc[6]+g5))]
+    swo = [sub('ws-128',(sw[0]+a6)), sub('ws-148',(sw[1]+b6)),sub('ws-159',(sw[2]+c6)), sub('ws-71',(sw[3]+d6)), sub('ws-84',(sw[4]+e6)),
+           sub('ws-161',(sw[5]+f6)), sub('ws-17',(sw[6]+g6))]    
     S_imper =[Nperv('ws-128',(Simpl[0]+a3)), Nperv('ws-148',(Simpl[1]+b3)),Nperv('ws-159',(Simpl[2]+c3)), Nperv('ws-71',(Simpl[3]+d3)), Nperv('ws-84',(Simpl[4]+e3)),
            Nperv('ws-161',(Simpl[5]+f3)), Nperv('ws-17',(Simpl[6]+g3))]
     S_per = [Sperv('ws-128',(Sprl[0]+a4)), Sperv('ws-148',(Sprl[1]+b4)),Sperv('ws-159',(Sprl[2]+c4)), Sperv('ws-71',(Sprl[3]+d4)), Sperv('ws-84',(Sprl[4]+e4)),
@@ -204,17 +219,19 @@ def modelswmmi(a,b,c,d,e,f,g,
     n_ch = [manch('c67',(n_chan[0]+i)),(manch('c68',n_chan[1])+j), (manch('c70',n_chan[2])+k), (manch('c71',n_chan[3])+l)]
     n_r = [manchr('c67',(n_right[0]+h)), manchr('c68',(n_right[1]+m)), manchr('c70',(n_right[2]+n)), manchr('c71',(n_right[3]+o))]
     n_l = [manchl('c67',(n_left[0]+p)), manchl('c68',(n_left[1]+q)), manchl('c70',(n_left[2]+r)), manchl('c71',(n_left[3]+s))]
-    inpfi(CNU,n_imp, n_per, S_imper,S_per, n_ch,n_r,n_l, fn)
+    inpfi(CNU,n_imp, n_per, slo, swo, S_imper,S_per, n_ch,n_r,n_l, fn)
     df = runf(fn)
     r2 = dis(df["S1 Discharge"], vf_dis1)
     return r2
 #%%
-def fr47(a, b, c, d, e, f, g,a1, b1, c1, d1, e1, f1, g1, a2, b2, c2, d2, e2, f2, g2,
+def fr61(a, b, c, d, e, f, g,a1, b1, c1, d1, e1, f1, g1, a2, b2, c2, d2, e2, f2, g2,
+         a5, b5, c5, d5, e5, f5, g5,a6, b6, c6, d6, e6, f6, g6,
          a3, b3, c3, d3, e3, f3, g3, a4, b4, c4, d4, e4, f4, g4,
          i,j,k,l, h, m, n,o,p, q, r, s):
     # print(params)  # <-- you'll see that params is a NumPy array
     # <-- for readability you may wish to assign names to the component variables
     r2 = modelswmmi(a, b, c, d,  e, f, g, a1, b1, c1, d1, e1, f1, g1,a2, b2, c2, d2, e2, f2, g2,
+                    a5, b5, c5, d5, e5, f5, g5,a6, b6, c6, d6, e6, f6, g6,
                     a3, b3, c3, d3, e3, f3, g3, a4, b4, c4, d4, e4, f4, g4,
                     i,j,k,l, h, m, n,o,p, q, r, s, "cal2")
     return r2
@@ -273,6 +290,20 @@ parameters = [sherpa.Continuous(name='a', range=[-5,10]),
               sherpa.Continuous(name='e2', range=[-0.35,0.6]),
               sherpa.Continuous(name='f2', range=[-0.35,0.6]),
               sherpa.Continuous(name='g2', range=[-0.35,0.6]),
+              sherpa.Continuous(name='a5', range=[-0.2*slc[0],+1.5*slc[0]]),
+              sherpa.Continuous(name='b5', range=[-0.2*slc[1],+1.5*slc[1]]),
+              sherpa.Continuous(name='c5', range=[-0.2*slc[2],+1.5*slc[2]]),
+              sherpa.Continuous(name='d5', range=[-0.2*slc[3],+1.5*slc[3]]),
+              sherpa.Continuous(name='e5', range=[-0.2*slc[4],+1.5*slc[4]]),
+              sherpa.Continuous(name='f5', range=[-0.2*slc[5],+1.5*slc[5]]),
+              sherpa.Continuous(name='g5', range=[-0.2*slc[6],+1.5*slc[6]]),
+              sherpa.Continuous(name='a6', range=[-0.3*sw[0],+0.7*sw[0]]),
+              sherpa.Continuous(name='b6', range=[-0.3*sw[1],+0.7*sw[1]]),
+              sherpa.Continuous(name='c6', range=[-0.3*sw[2],+0.7*sw[2]]),
+              sherpa.Continuous(name='d6', range=[-0.3*sw[3],+0.7*sw[3]]),
+              sherpa.Continuous(name='e6', range=[-0.3*sw[4],+0.7*sw[4]]),
+              sherpa.Continuous(name='f6', range=[-0.3*sw[5],+0.7*sw[5]]),
+              sherpa.Continuous(name='g6', range=[-0.3*sw[6],+0.7*sw[6]]),              
               sherpa.Continuous(name='a3', range=[-0.5,5.5]),
               sherpa.Continuous(name='b3', range=[-0.5,5.5]),
               sherpa.Continuous(name='c3', range=[-0.5,5.5]),
@@ -299,9 +330,9 @@ parameters = [sherpa.Continuous(name='a', range=[-5,10]),
               sherpa.Continuous(name='q', range=[-0.005,0.035]),
               sherpa.Continuous(name='r', range=[-0.005,0.015]),
               sherpa.Continuous(name='s', range=[0.005,0.015])]
-algorithm = sherpa.algorithms.GPyOpt(model_type='GP',
-                                     acquisition_type='MPI', 
-                                     max_concurrent=1,)
+algorithm = sherpa.algorithms.GPyOpt(model_type='GP_MCMC',
+                                     acquisition_type='MPI_MCMC', 
+                                     max_concurrent=1)
 #algorithm = sherpa.algorithms.PopulationBasedTraining(population_size=5,
 #                                                      num_generations=5,
 #                                                      perturbation_factors=(0.8, 1.2))
@@ -319,7 +350,7 @@ for trial in study:
     for i in range(num_iterations):
         
         # access parameters via trial.parameters and id via trial.id
-        pseudo_loss = fr47(trial.parameters['a'], trial.parameters['b'], 
+        pseudo_loss = fr61(trial.parameters['a'], trial.parameters['b'], 
                           trial.parameters['c'], trial.parameters['d'],
                           trial.parameters['e'],trial.parameters['f'],
                           trial.parameters['g'], trial.parameters['a1'],
@@ -330,6 +361,14 @@ for trial in study:
                           trial.parameters['b2'], trial.parameters['c2'],
                           trial.parameters['d2'],trial.parameters['e2'],
                           trial.parameters['f2'],trial.parameters['g2'],
+                          trial.parameters['a5'],
+                          trial.parameters['b5'], trial.parameters['c5'],
+                          trial.parameters['d5'],trial.parameters['e5'],
+                          trial.parameters['f5'],trial.parameters['g5'],
+                           trial.parameters['a6'],
+                          trial.parameters['b6'], trial.parameters['c6'],
+                          trial.parameters['d6'],trial.parameters['e6'],
+                          trial.parameters['f6'],trial.parameters['g6'],
                           trial.parameters['a3'],
                           trial.parameters['b3'], trial.parameters['c3'],
                           trial.parameters['d3'],trial.parameters['e3'],
