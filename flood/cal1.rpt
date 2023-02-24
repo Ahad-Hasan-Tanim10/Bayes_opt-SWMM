@@ -1,0 +1,1176 @@
+
+  EPA STORM WATER MANAGEMENT MODEL - VERSION 5.1 (Build 5.1.13)
+  --------------------------------------------------------------
+
+  WARNING 09: time series interval greater than recording interval for Rain Gage 1
+  WARNING 01: wet weather time step reduced to recording interval for Rain Gage 1
+  WARNING 09: time series interval greater than recording interval for Rain Gage 2
+  WARNING 04: minimum elevation drop used for Conduit 58
+  WARNING 04: minimum elevation drop used for Conduit 59
+  WARNING 04: minimum elevation drop used for Conduit 60
+  WARNING 04: minimum elevation drop used for Conduit 61
+  WARNING 04: minimum elevation drop used for Conduit 63
+  WARNING 04: minimum elevation drop used for Conduit 67
+  WARNING 04: minimum elevation drop used for Conduit 72
+  WARNING 04: minimum elevation drop used for Conduit 73
+  WARNING 04: minimum elevation drop used for Conduit 74
+  WARNING 04: minimum elevation drop used for Conduit 78
+  WARNING 04: minimum elevation drop used for Conduit 56
+  WARNING 02: maximum depth increased for Node 22
+  WARNING 02: maximum depth increased for Node 23
+  WARNING 02: maximum depth increased for Node 24
+  WARNING 02: maximum depth increased for Node 25
+  WARNING 02: maximum depth increased for Node 32
+  WARNING 02: maximum depth increased for Node 33
+  WARNING 02: maximum depth increased for Node 34
+  WARNING 02: maximum depth increased for Node 35
+  WARNING 02: maximum depth increased for Node 36
+  WARNING 02: maximum depth increased for Node 37
+  WARNING 02: maximum depth increased for Node 40
+  WARNING 02: maximum depth increased for Node 41
+  WARNING 02: maximum depth increased for Node 42
+  WARNING 02: maximum depth increased for Node 43_depth
+  WARNING 02: maximum depth increased for Node 44
+  WARNING 02: maximum depth increased for Node 46
+  WARNING 02: maximum depth increased for Node 47
+  WARNING 02: maximum depth increased for Node 50
+  WARNING 02: maximum depth increased for Node 51
+  WARNING 02: maximum depth increased for Node 52
+  WARNING 02: maximum depth increased for Node 53
+  WARNING 02: maximum depth increased for Node 55
+  WARNING 02: maximum depth increased for Node 56a
+  WARNING 02: maximum depth increased for Node 57
+  WARNING 02: maximum depth increased for Node 58
+  WARNING 02: maximum depth increased for Node 59
+  WARNING 02: maximum depth increased for Node 60
+  WARNING 02: maximum depth increased for Node 61
+  WARNING 02: maximum depth increased for Node 62
+  WARNING 02: maximum depth increased for Node 63
+  WARNING 02: maximum depth increased for Node 64
+  WARNING 02: maximum depth increased for Node 65
+  WARNING 02: maximum depth increased for Node 66
+  WARNING 02: maximum depth increased for Node 67
+  WARNING 02: maximum depth increased for Node 68
+  WARNING 02: maximum depth increased for Node 69
+  WARNING 02: maximum depth increased for Node 70
+  WARNING 02: maximum depth increased for Node 71
+  WARNING 02: maximum depth increased for Node 72
+  WARNING 02: maximum depth increased for Node 73
+  WARNING 02: maximum depth increased for Node 74
+  WARNING 02: maximum depth increased for Node 75
+  WARNING 02: maximum depth increased for Node 76
+  WARNING 02: maximum depth increased for Node 77
+  WARNING 02: maximum depth increased for Node 78
+  WARNING 02: maximum depth increased for Node 79
+  WARNING 02: maximum depth increased for Node 92
+  WARNING 02: maximum depth increased for Node 134
+  WARNING 02: maximum depth increased for Node 135
+  WARNING 02: maximum depth increased for Node 136
+  WARNING 02: maximum depth increased for Node 138
+  WARNING 02: maximum depth increased for Node 139
+  WARNING 02: maximum depth increased for Node 140
+  WARNING 02: maximum depth increased for Node 141
+  WARNING 02: maximum depth increased for Node 142
+  WARNING 02: maximum depth increased for Node 143
+  WARNING 02: maximum depth increased for Node 158
+  WARNING 02: maximum depth increased for Node 163
+  WARNING 02: maximum depth increased for Node 164
+  WARNING 02: maximum depth increased for Node 165
+  WARNING 02: maximum depth increased for Node 166
+  WARNING 02: maximum depth increased for Node 167
+  WARNING 02: maximum depth increased for Node 168
+  WARNING 02: maximum depth increased for Node 170
+  WARNING 02: maximum depth increased for Node 171
+  WARNING 02: maximum depth increased for Node 173
+  WARNING 02: maximum depth increased for Node 174
+  
+  *********************************************************
+  NOTE: The summary statistics displayed in this report are
+  based on results found at every computational time step,  
+  not just on results from each reporting time step.
+  *********************************************************
+  
+  ****************
+  Analysis Options
+  ****************
+  Flow Units ............... CMS
+  Process Models:
+    Rainfall/Runoff ........ YES
+    RDII ................... NO
+    Snowmelt ............... NO
+    Groundwater ............ NO
+    Flow Routing ........... YES
+    Ponding Allowed ........ NO
+    Water Quality .......... NO
+  Infiltration Method ...... CURVE_NUMBER
+  Flow Routing Method ...... DYNWAVE
+  Surcharge Method ......... EXTRAN
+  Starting Date ............ 06/24/2020 00:00:00
+  Ending Date .............. 06/25/2020 23:45:00
+  Antecedent Dry Days ...... 0.0
+  Report Time Step ......... 00:15:00
+  Wet Time Step ............ 00:05:00
+  Dry Time Step ............ 00:15:00
+  Routing Time Step ........ 30.00 sec
+  Variable Time Step ....... YES
+  Maximum Trials ........... 8
+  Number of Threads ........ 1
+  Head Tolerance ........... 0.001500 m
+  
+  
+  **************************        Volume         Depth
+  Runoff Quantity Continuity     hectare-m            mm
+  **************************     ---------       -------
+  Total Precipitation ......         0.000         0.000
+  Evaporation Loss .........         0.000         0.000
+  Infiltration Loss ........         0.000         0.000
+  Surface Runoff ...........         0.000         0.000
+  Final Storage ............         0.000         0.000
+  Continuity Error (%) .....         0.000
+  
+  
+  **************************        Volume        Volume
+  Flow Routing Continuity        hectare-m      10^6 ltr
+  **************************     ---------     ---------
+  Dry Weather Inflow .......        10.983       109.829
+  Wet Weather Inflow .......         0.000         0.000
+  Groundwater Inflow .......         0.000         0.000
+  RDII Inflow ..............         0.000         0.000
+  External Inflow ..........         0.000         0.000
+  External Outflow .........         6.486        64.865
+  Flooding Loss ............         3.779        37.788
+  Evaporation Loss .........         0.000         0.000
+  Exfiltration Loss ........         0.000         0.000
+  Initial Stored Volume ....         0.059         0.586
+  Final Stored Volume ......         0.772         7.723
+  Continuity Error (%) .....         0.035
+  
+  
+  *************************
+  Highest Continuity Errors
+  *************************
+  Node 172 (97.48%)
+  Node 161 (91.06%)
+  Node 160 (84.88%)
+  
+  
+  ***************************
+  Time-Step Critical Elements
+  ***************************
+  Link 47b (99.98%)
+  
+  
+  ********************************
+  Highest Flow Instability Indexes
+  ********************************
+  Link 53 (55)
+  Link 54 (54)
+  Link 52 (27)
+  Link 51 (14)
+  Link 78 (2)
+  
+  
+  *************************
+  Routing Time Step Summary
+  *************************
+  Minimum Time Step           :     1.23 sec
+  Average Time Step           :     1.25 sec
+  Maximum Time Step           :     4.07 sec
+  Percent in Steady State     :     0.00
+  Average Iterations per Step :     2.00
+  Percent Not Converging      :     0.01
+  
+  
+  ***************************
+  Subcatchment Runoff Summary
+  ***************************
+  
+  ------------------------------------------------------------------------------------------------------------------------------
+                            Total      Total      Total      Total     Imperv       Perv      Total       Total     Peak  Runoff
+                           Precip      Runon       Evap      Infil     Runoff     Runoff     Runoff      Runoff   Runoff   Coeff
+  Subcatchment                 mm         mm         mm         mm         mm         mm         mm    10^6 ltr      CMS
+  ------------------------------------------------------------------------------------------------------------------------------
+  ws-1                       0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-10                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-101                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-102                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-103                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-105                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-106                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-107                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-108                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-11                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-112                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-114                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-115                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-116                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-118                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-119                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-12                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-120                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-121                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-122                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-123                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-124                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-127                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-128                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-13                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-130                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-131                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-132                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-136                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-137                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-138                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-139                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-14                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-141                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-142                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-143                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-144                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-145                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-146                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-148                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-149                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-15                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-150                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-154                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-155                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-156                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-157                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-159                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-16                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-161                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-162                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-163                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-165                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-166                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-167                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-168                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-169                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-17                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-170                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-171                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-172                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-173                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-174                     0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-18                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-19                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-2                       0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-20                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-21                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-22                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-23                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-24                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-25                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-26                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-27                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-28                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-29                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-3                       0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-30                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-31                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-32                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-35                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-37                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-38                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-40                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-41                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-42                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-43                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-45                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-46                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-47                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-48                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-49                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-50                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-52                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-53                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-54                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-55                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-57                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-58                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-60                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-61                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-62                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-63                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-64                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-65                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-66                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-69                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-7                       0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-70                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-71                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-73                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-74                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-75                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-77                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-78                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-79                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-8                       0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-80                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-81                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-83                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-84                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-87                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-88                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-89                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-9                       0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-90                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-91                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-92                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-93                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-94                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-95                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-96                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-97                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  ws-98                      0.00       0.00       0.00       0.00       0.00       0.00       0.00        0.00     0.00   0.000
+  
+  
+  ******************
+  Node Depth Summary
+  ******************
+  
+  ---------------------------------------------------------------------------------
+                                 Average  Maximum  Maximum  Time of Max    Reported
+                                   Depth    Depth      HGL   Occurrence   Max Depth
+  Node                 Type       Meters   Meters   Meters  days hr:min      Meters
+  ---------------------------------------------------------------------------------
+  1                    JUNCTION     0.14     0.15    34.85     0  08:52        0.00
+  2                    JUNCTION     0.25     0.27    35.29     0  08:52        0.00
+  3                    JUNCTION     0.25     0.27    35.60     0  08:51        0.00
+  4                    JUNCTION     0.25     0.27    35.92     0  08:51        0.00
+  5                    JUNCTION     0.25     0.27    36.23     0  08:50        0.00
+  6                    JUNCTION     0.25     0.27    36.55     0  08:50        0.00
+  7                    JUNCTION     0.25     0.27    36.86     0  08:49        0.00
+  8                    JUNCTION     0.25     0.27    37.17     0  08:49        0.00
+  9                    JUNCTION     0.25     0.27    37.49     0  02:47        0.00
+  10                   JUNCTION     0.25     0.27    37.81     0  02:47        0.00
+  11                   JUNCTION     0.25     0.27    38.12     0  02:46        0.00
+  12                   JUNCTION     0.25     0.27    38.43     0  02:46        0.00
+  13                   JUNCTION     0.25     0.27    38.75     0  02:45        0.00
+  14                   JUNCTION     0.25     0.27    39.06     0  02:45        0.00
+  15                   JUNCTION     0.25     0.27    39.38     0  02:44        0.00
+  16                   JUNCTION     0.25     0.27    39.70     0  02:44        0.00
+  17                   JUNCTION     0.26     0.27    40.01     0  02:43        0.00
+  18                   JUNCTION     0.26     0.27    40.33     0  02:43        0.00
+  19                   JUNCTION     0.26     0.27    40.65     0  02:42        0.00
+  20                   JUNCTION     0.26     0.27    40.97     0  02:42        0.00
+  21                   JUNCTION     0.26     0.27    41.31     0  02:41        0.00
+  22                   JUNCTION     0.26     0.27    41.63     0  02:41        0.00
+  23                   JUNCTION     0.26     0.27    41.97     0  02:40        0.00
+  24                   JUNCTION     0.26     0.27    42.29     0  02:40        0.00
+  25                   JUNCTION     0.26     0.27    42.41     0  02:40        0.00
+  26                   JUNCTION     0.26     0.27    42.59     0  02:39        0.00
+  27                   JUNCTION     0.26     0.27    42.92     0  02:39        0.00
+  28                   JUNCTION     0.26     0.27    43.24     0  02:38        0.00
+  29                   JUNCTION     0.26     0.27    43.69     0  02:38        0.00
+  30                   JUNCTION     0.26     0.27    44.04     0  01:38        0.00
+  31                   JUNCTION     0.26     0.27    44.36     0  01:37        0.00
+  32                   JUNCTION     0.26     0.27    44.68     0  01:36        0.00
+  33                   JUNCTION     0.26     0.27    45.00     0  01:36        0.00
+  34                   JUNCTION     0.26     0.27    45.31     0  01:35        0.00
+  35                   JUNCTION     0.26     0.27    45.66     0  01:30        0.00
+  36                   JUNCTION     0.26     0.27    45.97     0  02:01        0.00
+  37                   JUNCTION     0.26     0.27    46.34     0  08:34        0.00
+  38                   JUNCTION     0.26     0.27    46.66     0  08:33        0.00
+  39                   JUNCTION     0.24     0.24    46.70     0  08:33        0.00
+  40                   JUNCTION     0.35     0.36    47.30     0  08:32        0.00
+  41                   JUNCTION     0.26     0.27    48.79     0  03:28        0.00
+  42                   JUNCTION     0.28     0.29    48.99     0  03:27        0.00
+  43_depth             JUNCTION     0.28     0.29    50.08     0  03:26        0.00
+  44                   JUNCTION     0.23     0.23    51.13     0  03:26        0.00
+  45                   JUNCTION     0.39     0.40    51.45     0  03:26        0.00
+  46                   JUNCTION     0.77     0.78    51.68     0  03:25        0.00
+  47                   JUNCTION     0.40     0.41    51.74     0  03:25        0.00
+  48                   JUNCTION     0.32     0.42    52.71     0  00:00        0.00
+  49                   JUNCTION     0.29     0.30    52.66     0  03:24        0.00
+  50                   JUNCTION     0.68     0.69    53.12     0  05:34        0.00
+  51                   JUNCTION     0.22     0.22    54.42     0  09:53        0.00
+  52                   JUNCTION     0.29     0.29    54.59     0  09:53        0.00
+  53                   JUNCTION     0.45     0.46    55.04     0  07:43        0.00
+  54                   JUNCTION     0.16     0.17    55.04     0  05:33        0.00
+  55                   JUNCTION     0.06     0.06    55.29     0  03:22        0.00
+  56a                  JUNCTION     0.13     0.14    55.65     0  03:22        0.00
+  57                   JUNCTION     0.11     0.12    56.20     0  03:21        0.00
+  58                   JUNCTION     0.24     0.26    56.35     0  03:21        0.00
+  59                   JUNCTION     0.33     0.36    56.44     0  03:20        0.00
+  60                   JUNCTION     0.56     0.60    56.69     0  00:58        0.00
+  61                   JUNCTION     0.58     0.62    56.70     0  00:58        0.00
+  62                   JUNCTION     0.05     0.06    57.97     0  00:47        0.00
+  63                   JUNCTION     0.13     0.14    58.05     0  00:49        0.00
+  64                   JUNCTION     0.07     0.07    58.23     0  08:18        0.00
+  65                   JUNCTION     0.10     0.11    58.54     0  08:18        0.00
+  66                   JUNCTION     0.15     0.16    58.68     0  08:17        0.00
+  67                   JUNCTION     0.32     0.34    58.86     0  08:17        0.00
+  68                   JUNCTION     0.09     0.09    59.62     0  08:16        0.00
+  69                   JUNCTION     0.08     0.09    59.90     0  00:40        0.00
+  70                   JUNCTION     0.48     0.51    60.33     0  01:16        0.00
+  71                   JUNCTION     0.27     0.28    60.33     0  08:15        0.00
+  72                   JUNCTION     0.42     0.45    60.49     0  08:15        0.00
+  73                   JUNCTION     0.59     0.62    60.66     0  08:14        0.00
+  74                   JUNCTION     0.61     0.64    60.68     0  08:13        0.00
+  75                   JUNCTION     0.22     0.24    60.90     0  00:58        0.00
+  76                   JUNCTION     0.19     0.22    61.18     0  00:58        0.00
+  77                   JUNCTION     0.07     0.09    61.66     0  00:57        0.00
+  78                   JUNCTION     0.39     0.45    62.02     0  00:56        0.00
+  79                   JUNCTION     0.14     0.15    62.33     0  03:05        0.00
+  80                   JUNCTION     0.09     0.10    62.72     0  08:21        0.00
+  81                   JUNCTION     0.12     0.12    62.95     0  07:07        0.00
+  82                   JUNCTION     0.12     0.12    63.16     0  03:18        0.00
+  83                   JUNCTION     0.12     0.12    63.37     0  07:40        0.00
+  84                   JUNCTION     0.12     0.12    63.58     0  03:17        0.00
+  85                   JUNCTION     0.12     0.12    63.79     0  04:47        0.00
+  86                   JUNCTION     0.12     0.12    64.00     0  02:56        0.00
+  87                   JUNCTION     0.12     0.12    64.21     0  09:23        0.00
+  88                   JUNCTION     0.12     0.12    64.42     0  09:23        0.00
+  89                   JUNCTION     0.12     0.12    64.63     0  09:01        0.00
+  90                   JUNCTION     0.12     0.12    64.91     0  08:42        0.00
+  91                   JUNCTION     0.00     0.00    65.00     0  00:00        0.00
+  92                   JUNCTION     0.00     0.00    65.21     0  00:00        0.00
+  93                   JUNCTION     0.00     0.00    65.42     0  00:00        0.00
+  94                   JUNCTION     0.00     0.00    65.63     0  00:00        0.00
+  95                   JUNCTION     0.00     0.00    65.84     0  00:00        0.00
+  96                   JUNCTION     0.00     0.00    66.05     0  00:00        0.00
+  97                   JUNCTION     0.00     0.00    66.26     0  00:00        0.00
+  98                   JUNCTION     0.00     0.00    66.29     0  00:00        0.00
+  99                   JUNCTION     0.00     0.00    66.32     0  00:00        0.00
+  100                  JUNCTION     0.00     0.00    66.35     0  00:00        0.00
+  101                  JUNCTION     0.00     0.00    66.38     0  00:00        0.00
+  102                  JUNCTION     0.00     0.00    66.44     0  00:00        0.00
+  103                  JUNCTION     0.00     0.00    66.50     0  00:00        0.00
+  104                  JUNCTION     0.00     0.00    66.56     0  00:00        0.00
+  105                  JUNCTION     0.00     0.00    66.62     0  00:00        0.00
+  106                  JUNCTION     0.00     0.00    66.68     0  00:00        0.00
+  107                  JUNCTION     0.00     0.00    66.74     0  00:00        0.00
+  108                  JUNCTION     0.00     0.00    66.80     0  00:00        0.00
+  109                  JUNCTION     0.00     0.00    66.86     0  00:00        0.00
+  110                  JUNCTION     0.00     0.00    66.92     0  00:00        0.00
+  111                  JUNCTION     0.00     0.00    66.97     0  00:00        0.00
+  112                  JUNCTION     0.00     0.00    67.06     0  00:00        0.00
+  113                  JUNCTION     0.00     0.00    67.65     0  00:00        0.00
+  114                  JUNCTION     0.00     0.00    68.35     0  00:00        0.00
+  115                  JUNCTION     0.00     0.00    68.95     0  00:00        0.00
+  116                  JUNCTION     0.00     0.00    69.81     0  00:00        0.00
+  117                  JUNCTION     0.00     0.00    70.41     0  00:00        0.00
+  118                  JUNCTION     0.00     0.00    71.01     0  00:00        0.00
+  119                  JUNCTION     0.00     0.00    71.61     0  00:00        0.00
+  120                  JUNCTION     0.00     0.00    72.21     0  00:00        0.00
+  121                  JUNCTION     0.00     0.00    72.82     0  00:00        0.00
+  122                  JUNCTION     0.00     0.00    73.45     0  00:00        0.00
+  123                  JUNCTION     0.00     0.00    74.14     0  00:00        0.00
+  124                  JUNCTION     0.00     0.00    72.52     0  00:00        0.00
+  125                  JUNCTION     0.00     0.00    72.83     0  00:00        0.00
+  126                  JUNCTION     0.00     0.00    73.13     0  00:00        0.00
+  127                  JUNCTION     0.00     0.00    73.43     0  00:00        0.00
+  128                  JUNCTION     0.00     0.00    73.76     0  00:00        0.00
+  129                  JUNCTION     0.00     0.00    74.11     0  00:00        0.00
+  130                  JUNCTION     0.00     0.00    74.61     0  00:00        0.00
+  131                  JUNCTION     0.00     0.00    75.11     0  00:00        0.00
+  132                  JUNCTION     0.18     0.18    65.12     0  09:23        0.00
+  133                  JUNCTION     0.18     0.18    65.27     0  09:23        0.00
+  134                  JUNCTION     0.18     0.18    65.42     0  04:51        0.00
+  135                  JUNCTION     0.18     0.18    65.57     0  09:24        0.00
+  136                  JUNCTION     0.18     0.18    65.72     0  08:55        0.00
+  137                  JUNCTION     0.27     0.28    65.84     0  07:05        0.00
+  138                  JUNCTION     0.50     0.51    66.09     0  03:16        0.00
+  139                  JUNCTION     0.57     0.58    66.18     0  08:18        0.00
+  140                  JUNCTION     0.62     0.63    66.24     0  03:23        0.00
+  141                  JUNCTION     0.66     0.67    66.29     0  03:19        0.00
+  142                  JUNCTION     0.69     0.70    66.34     0  09:12        0.00
+  143                  JUNCTION     0.72     0.72    66.38     0  09:12        0.00
+  144                  JUNCTION     0.74     0.74    66.42     0  04:06        0.00
+  145                  JUNCTION     0.76     0.76    66.45     0  07:46        0.00
+  146                  JUNCTION     0.77     0.78    66.48     0  03:03        0.00
+  147                  JUNCTION     0.79     0.79    66.51     0  03:30        0.00
+  148                  JUNCTION     0.80     0.81    66.54     0  04:06        0.00
+  149                  JUNCTION     0.81     0.82    66.57     0  09:33        0.00
+  150                  JUNCTION     0.27     0.28    66.66     0  00:55        0.00
+  151                  JUNCTION     0.48     0.48    67.30     0  00:56        0.00
+  152                  JUNCTION     0.51     0.51    67.93     0  00:03        0.00
+  153                  JUNCTION     0.51     0.51    68.53     0  00:57        0.00
+  154                  JUNCTION     0.51     0.51    69.12     0  00:53        0.00
+  155                  JUNCTION     0.50     0.51    69.72     0  00:53        0.00
+  156                  JUNCTION     0.50     0.50    70.33     0  00:01        0.00
+  157                  JUNCTION     0.50     0.51    70.93     0  00:01        0.00
+  158                  JUNCTION     0.50     0.50    71.52     0  00:00        0.00
+  160                  JUNCTION     0.10     0.11    45.66     0  01:29        0.00
+  161                  JUNCTION     0.01     0.01    45.66     0  01:20        0.00
+  162                  JUNCTION     0.00     0.00    45.73     0  00:00        0.00
+  163                  JUNCTION     0.00     0.00    45.83     0  00:00        0.00
+  164                  JUNCTION     0.00     0.00    45.92     0  00:00        0.00
+  165                  JUNCTION     0.00     0.00    46.01     0  00:00        0.00
+  166                  JUNCTION     0.00     0.00    46.10     0  00:00        0.00
+  167                  JUNCTION     0.00     0.00    46.28     0  00:00        0.00
+  168                  JUNCTION     0.00     0.00    46.37     0  00:00        0.00
+  169                  JUNCTION     0.00     0.00    46.46     0  00:00        0.00
+  170                  JUNCTION     0.00     0.00    46.55     0  00:00        0.00
+  171                  JUNCTION     0.00     0.00    46.71     0  00:00        0.00
+  172                  JUNCTION     0.02     0.02    47.30     0  03:30        0.00
+  173                  JUNCTION     0.00     0.00    48.01     0  00:00        0.00
+  174                  JUNCTION     0.00     0.00    49.36     0  00:00        0.00
+  47a                  JUNCTION     0.12     0.20    52.41     0  00:00        0.00
+  47b                  JUNCTION     0.26     0.31    52.55     0  00:00        0.00
+  56b                  JUNCTION     0.18     0.20    55.70     0  03:22        0.00
+  159                  JUNCTION     0.50     0.50    72.01     0  00:00        0.00
+  0                    OUTFALL      2.00     2.00    34.39     0  00:00        0.00
+  
+  
+  *******************
+  Node Inflow Summary
+  *******************
+  
+  -------------------------------------------------------------------------------------------------
+                                  Maximum  Maximum                  Lateral       Total        Flow
+                                  Lateral    Total  Time of Max      Inflow      Inflow     Balance
+                                   Inflow   Inflow   Occurrence      Volume      Volume       Error
+  Node                 Type           CMS      CMS  days hr:min    10^6 ltr    10^6 ltr     Percent
+  -------------------------------------------------------------------------------------------------
+  1                    JUNCTION     0.000    2.001     0  08:52           0        64.9       0.079
+  2                    JUNCTION     0.000    2.001     0  08:51           0          65       0.147
+  3                    JUNCTION     0.000    2.001     0  08:51           0        65.1       0.147
+  4                    JUNCTION     0.000    2.001     0  08:50           0        65.2       0.148
+  5                    JUNCTION     0.000    2.001     0  08:50           0        65.3       0.146
+  6                    JUNCTION     0.000    2.001     0  08:49           0        65.4       0.146
+  7                    JUNCTION     0.000    2.001     0  08:49           0        65.5       0.146
+  8                    JUNCTION     0.000    2.001     0  08:48           0        65.6       0.145
+  9                    JUNCTION     0.000    2.001     0  02:47           0        65.7       0.146
+  10                   JUNCTION     0.000    2.001     0  02:47           0        65.8       0.146
+  11                   JUNCTION     0.000    2.001     0  02:46           0        65.9       0.145
+  12                   JUNCTION     0.000    2.001     0  02:46           0          66       0.145
+  13                   JUNCTION     0.000    2.001     0  02:45           0        66.1       0.145
+  14                   JUNCTION     0.000    2.001     0  02:45           0        66.2       0.145
+  15                   JUNCTION     0.000    2.001     0  02:44           0        66.3       0.145
+  16                   JUNCTION     0.000    2.001     0  02:44           0        66.4       0.145
+  17                   JUNCTION     0.000    2.001     0  02:43           0        66.4       0.144
+  18                   JUNCTION     0.000    2.001     0  02:43           0        66.5       0.146
+  19                   JUNCTION     0.000    2.001     0  02:42           0        66.6       0.145
+  20                   JUNCTION     0.000    2.001     0  02:42           0        66.7       0.150
+  21                   JUNCTION     0.000    2.001     0  02:41           0        66.8       0.151
+  22                   JUNCTION     0.000    2.001     0  02:41           0        66.9       0.149
+  23                   JUNCTION     0.000    2.001     0  02:40           0          67       0.149
+  24                   JUNCTION     0.000    2.001     0  02:40           0        67.1       0.100
+  25                   JUNCTION     0.000    2.001     0  02:39           0        67.2       0.069
+  26                   JUNCTION     0.000    2.001     0  02:39           0        67.2       0.115
+  27                   JUNCTION     0.000    2.001     0  02:39           0        67.3       0.145
+  28                   JUNCTION     0.000    2.001     0  02:38           0        67.4       0.173
+  29                   JUNCTION     0.000    2.001     0  02:37           0        67.6       0.180
+  30                   JUNCTION     0.000    2.001     0  01:37           0        67.7       0.152
+  31                   JUNCTION     0.000    2.001     0  01:37           0        67.8       0.144
+  32                   JUNCTION     0.000    2.001     0  01:36           0        67.9       0.143
+  33                   JUNCTION     0.000    2.001     0  01:35           0          68       0.142
+  34                   JUNCTION     0.000    2.001     0  01:35           0        68.1       0.147
+  35                   JUNCTION     0.000    2.001     0  01:29           0        68.2       0.221
+  36                   JUNCTION     0.000    2.001     0  08:34           0        68.3       0.151
+  37                   JUNCTION     0.000    2.001     0  08:33           0        68.5       0.153
+  38                   JUNCTION     0.000    2.001     0  08:33           0        68.5       0.096
+  39                   JUNCTION     0.000    2.001     0  08:33           0        68.6       0.077
+  40                   JUNCTION     0.000    2.001     0  01:15           0        68.8       0.275
+  41                   JUNCTION     0.000    2.001     0  03:27           0        68.9       0.135
+  42                   JUNCTION     0.000    2.001     0  03:26           0          69       0.153
+  43_depth             JUNCTION     0.000    2.001     0  03:26           0        69.1       0.120
+  44                   JUNCTION     0.000    2.001     0  03:26           0        69.1       0.071
+  45                   JUNCTION     0.000    2.001     0  03:25           0        69.1       0.043
+  46                   JUNCTION     0.000    2.001     0  03:25           0        69.3       0.199
+  47                   JUNCTION     0.000    2.270     0  00:00           0        69.3       0.064
+  48                   JUNCTION     0.000    2.001     0  03:24           0        69.3      -0.019
+  49                   JUNCTION     0.000    2.001     0  09:54           0        69.3       0.026
+  50                   JUNCTION     0.000    2.001     0  09:53           0        69.4       0.161
+  51                   JUNCTION     0.000    2.002     0  04:08           0        69.5       0.060
+  52                   JUNCTION     0.000    2.036     0  05:33           0        69.5      -0.016
+  53                   JUNCTION     1.300    2.001     0  03:23        46.8        69.6       0.158
+  54                   JUNCTION     0.000    0.701     0  03:22           0        22.9       0.285
+  55                   JUNCTION     0.000    0.701     0  03:22           0        22.9       0.105
+  56a                  JUNCTION     0.000    0.701     0  03:22           0        22.9       0.079
+  57                   JUNCTION     0.000    0.701     0  03:21           0          23       0.172
+  58                   JUNCTION     0.000    0.701     0  03:20           0          23       0.334
+  59                   JUNCTION     0.000    0.701     0  08:20           0        23.1       0.276
+  60                   JUNCTION     0.000    0.702     0  08:20           0        23.2       0.436
+  61                   JUNCTION     0.000    0.711     0  00:47           0        23.3       0.255
+  62                   JUNCTION     0.000    0.813     0  00:46           0        23.3       0.171
+  63                   JUNCTION     0.000    0.702     0  08:18           0        23.4       0.268
+  64                   JUNCTION     0.000    0.703     0  08:18           0        23.4       0.086
+  65                   JUNCTION     0.000    0.703     0  08:17           0        23.4       0.096
+  66                   JUNCTION     0.000    0.703     0  08:17           0        23.4       0.166
+  67                   JUNCTION     0.000    0.703     0  08:16           0        23.5       0.158
+  68                   JUNCTION     0.000    0.704     0  01:16           0        23.5       0.238
+  69                   JUNCTION     0.000    0.704     0  01:16           0        23.5       0.048
+  70                   JUNCTION     0.000    0.715     0  00:49           0        23.6       0.351
+  71                   JUNCTION     0.000    0.709     0  08:15           0        23.7       0.252
+  72                   JUNCTION     0.000    0.716     0  08:14           0        23.8       0.277
+  73                   JUNCTION     0.000    0.743     0  08:13           0        23.9       0.453
+  74                   JUNCTION     0.000    0.769     0  00:58           0          24       0.662
+  75                   JUNCTION     0.000    0.822     0  00:58           0        24.1       0.252
+  76                   JUNCTION     0.000    1.047     0  00:57           0        24.2       0.423
+  77                   JUNCTION     0.000    1.239     0  02:03           0        24.2       0.221
+  78                   JUNCTION     0.000    0.701     0  02:58           0        24.3       0.218
+  79                   JUNCTION     0.000    0.701     0  02:54           0        24.3       0.118
+  80                   JUNCTION     0.000    0.701     0  04:35           0        24.3       0.054
+  81                   JUNCTION     0.000    0.701     0  03:18           0        24.3       0.069
+  82                   JUNCTION     0.000    0.701     0  03:04           0        24.4       0.069
+  83                   JUNCTION     0.000    0.701     0  04:02           0        24.4       0.069
+  84                   JUNCTION     0.000    0.701     0  03:17           0        24.4       0.069
+  85                   JUNCTION     0.000    0.701     0  08:17           0        24.4       0.068
+  86                   JUNCTION     0.000    0.701     0  05:23           0        24.4       0.068
+  87                   JUNCTION     0.000    0.701     0  09:23           0        24.4       0.068
+  88                   JUNCTION     0.000    0.701     0  09:23           0        24.5       0.068
+  89                   JUNCTION     0.000    0.701     0  06:08           0        24.5       0.080
+  90                   JUNCTION     0.000    0.701     0  03:03           0        24.5       0.075
+  91                   JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  92                   JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  93                   JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  94                   JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  95                   JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  96                   JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  97                   JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  98                   JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  99                   JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  100                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  101                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  102                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  103                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  104                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  105                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  106                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  107                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  108                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  109                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  110                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  111                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  112                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  113                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  114                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  115                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  116                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  117                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  118                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  119                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  120                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  121                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  122                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  123                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  124                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  125                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  126                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  127                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  128                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  129                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  130                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  131                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  132                  JUNCTION     0.000    0.701     0  09:23           0        24.5       0.061
+  133                  JUNCTION     0.000    0.701     0  09:10           0        24.5       0.062
+  134                  JUNCTION     0.000    0.701     0  03:28           0        24.5       0.061
+  135                  JUNCTION     0.000    0.701     0  04:08           0        24.6       0.061
+  136                  JUNCTION     0.000    0.701     0  08:38           0        24.6       0.081
+  137                  JUNCTION     0.000    0.701     0  07:07           0        24.6       0.112
+  138                  JUNCTION     0.000    0.701     0  04:08           0        24.6       0.126
+  139                  JUNCTION     0.000    0.701     0  04:08           0        24.7       0.143
+  140                  JUNCTION     0.000    0.701     0  07:24           0        24.7       0.160
+  141                  JUNCTION     0.000    0.701     0  09:13           0        24.8       0.182
+  142                  JUNCTION     0.000    0.701     0  07:17           0        24.8       0.188
+  143                  JUNCTION     0.000    0.701     0  07:17           0        24.9       0.182
+  144                  JUNCTION     0.000    0.701     0  03:45           0        24.9       0.189
+  145                  JUNCTION     0.000    0.701     0  08:33           0        24.9       0.195
+  146                  JUNCTION     0.000    0.701     0  04:41           0          25       0.196
+  147                  JUNCTION     0.000    0.701     0  09:33           0          25       0.205
+  148                  JUNCTION     0.000    0.701     0  03:32           0        25.1       0.202
+  149                  JUNCTION     0.000    0.701     0  00:45           0        25.1       0.199
+  150                  JUNCTION     0.000    0.701     0  01:00           0        25.2       0.046
+  151                  JUNCTION     0.000    0.701     0  00:56           0        25.2       0.050
+  152                  JUNCTION     0.000    0.703     0  00:02           0        25.2       0.060
+  153                  JUNCTION     0.000    0.704     0  00:02           0        25.2       0.060
+  154                  JUNCTION     0.000    0.704     0  00:02           0        25.2       0.012
+  155                  JUNCTION     0.000    0.704     0  00:02           0        25.2       0.012
+  156                  JUNCTION     0.000    0.704     0  00:01           0        25.2       0.012
+  157                  JUNCTION     0.000    0.702     0  00:01           0        25.2       0.012
+  158                  JUNCTION     0.000    0.741     0  00:00           0        25.3       0.053
+  160                  JUNCTION     0.000    0.117     0  00:15           0      0.0392     561.212
+  161                  JUNCTION     0.000    0.011     0  01:10           0     0.00346    1018.589
+  162                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  163                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  164                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  165                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  166                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  167                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  168                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  169                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  170                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  171                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  172                  JUNCTION     0.000    0.060     0  01:07           0       0.011    3865.907
+  173                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  174                  JUNCTION     0.000    0.000     0  00:00           0           0       0.000 ltr
+  47a                  JUNCTION     0.000    2.216     0  00:00           0        69.3       0.012
+  47b                  JUNCTION     0.000    2.170     0  00:00           0        69.3       0.014
+  56b                  JUNCTION     0.000    0.701     0  03:21           0        22.9       0.153
+  159                  JUNCTION     1.750    1.750     0  00:00          63          63       0.002
+  0                    OUTFALL      0.000    2.001     0  08:52           0        64.9       0.000
+  
+  
+  **********************
+  Node Surcharge Summary
+  **********************
+  
+  Surcharging occurs when water rises above the top of the highest conduit.
+  ---------------------------------------------------------------------
+                                               Max. Height   Min. Depth
+                                   Hours       Above Crown    Below Rim
+  Node                 Type      Surcharged         Meters       Meters
+  ---------------------------------------------------------------------
+  152                  JUNCTION        9.95          0.015        2.119
+  153                  JUNCTION        9.96          0.008        1.657
+  154                  JUNCTION        9.96          0.007        1.285
+  155                  JUNCTION        9.97          0.005        1.106
+  156                  JUNCTION        9.98          0.005        0.412
+  157                  JUNCTION        9.98          0.005        0.152
+  158                  JUNCTION        9.99          0.000        0.000
+  159                  JUNCTION       10.00          0.000        0.000
+  
+  
+  *********************
+  Node Flooding Summary
+  *********************
+  
+  Flooding refers to all water that overflows a node, whether it ponds or not.
+  --------------------------------------------------------------------------
+                                                             Total   Maximum
+                                 Maximum   Time of Max       Flood    Ponded
+                        Hours       Rate    Occurrence      Volume     Depth
+  Node                 Flooded       CMS   days hr:min    10^6 ltr    Meters
+  --------------------------------------------------------------------------
+  158                     9.99     0.051      0  00:00       0.036     0.000
+  159                    10.00     1.640      0  00:00      37.753     0.000
+  
+  
+  ***********************
+  Outfall Loading Summary
+  ***********************
+  
+  -----------------------------------------------------------
+                         Flow       Avg       Max       Total
+                         Freq      Flow      Flow      Volume
+  Outfall Node           Pcnt       CMS       CMS    10^6 ltr
+  -----------------------------------------------------------
+  0                     93.69     1.948     2.001      64.865
+  -----------------------------------------------------------
+  System                93.69     1.948     2.001      64.865
+  
+  
+  ********************
+  Link Flow Summary
+  ********************
+  
+  -----------------------------------------------------------------------------
+                                 Maximum  Time of Max   Maximum    Max/    Max/
+                                  |Flow|   Occurrence   |Veloc|    Full    Full
+  Link                 Type          CMS  days hr:min     m/sec    Flow   Depth
+  -----------------------------------------------------------------------------
+  1                    CONDUIT     2.001     0  08:52      0.27    0.02    0.50
+  2                    CONDUIT     2.001     0  08:52      1.37    0.04    0.10
+  3                    CONDUIT     2.001     0  08:51      1.06    0.04    0.13
+  4                    CONDUIT     2.001     0  08:51      1.06    0.04    0.13
+  5                    CONDUIT     2.001     0  08:50      1.06    0.04    0.13
+  6                    CONDUIT     2.001     0  08:50      1.06    0.04    0.13
+  7                    CONDUIT     2.001     0  08:49      1.06    0.04    0.13
+  8                    CONDUIT     2.001     0  08:49      1.06    0.04    0.13
+  9                    CONDUIT     2.001     0  08:48      1.06    0.04    0.13
+  10                   CONDUIT     2.001     0  02:47      1.06    0.04    0.13
+  11                   CONDUIT     2.001     0  02:47      1.06    0.04    0.13
+  12                   CONDUIT     2.001     0  02:46      1.06    0.04    0.13
+  13                   CONDUIT     2.001     0  02:46      1.06    0.04    0.13
+  14                   CONDUIT     2.001     0  02:45      1.06    0.04    0.13
+  15                   CONDUIT     2.001     0  02:45      1.06    0.04    0.13
+  16                   CONDUIT     2.001     0  02:44      1.06    0.04    0.13
+  17                   CONDUIT     2.001     0  02:44      1.06    0.04    0.13
+  18                   CONDUIT     2.001     0  02:43      1.05    0.04    0.13
+  19                   CONDUIT     2.001     0  02:43      1.05    0.04    0.13
+  20                   CONDUIT     2.001     0  02:42      1.05    0.04    0.13
+  21                   CONDUIT     2.001     0  02:42      1.05    0.04    0.13
+  22                   CONDUIT     2.001     0  02:41      1.07    0.04    0.13
+  23                   CONDUIT     2.001     0  02:41      1.10    0.04    0.13
+  24                   CONDUIT     2.001     0  02:40      1.17    0.04    0.13
+  25                   CONDUIT     2.001     0  02:40      1.11    0.04    0.13
+  26                   CONDUIT     2.001     0  02:39      1.05    0.04    0.13
+  27                   CONDUIT     2.001     0  02:39      1.05    0.04    0.13
+  28                   CONDUIT     2.001     0  02:39      1.05    0.04    0.13
+  29                   CONDUIT     2.001     0  02:38      1.05    0.04    0.13
+  30                   CONDUIT     2.001     0  02:37      1.07    0.04    0.13
+  31                   CONDUIT     2.001     0  01:37      1.05    0.04    0.13
+  32                   CONDUIT     2.001     0  01:37      1.05    0.04    0.13
+  33                   CONDUIT     2.001     0  01:36      1.05    0.04    0.13
+  34                   CONDUIT     2.001     0  01:35      1.05    0.04    0.13
+  35                   CONDUIT     2.001     0  01:35      1.05    0.04    0.13
+  36                   CONDUIT     2.001     0  01:49      1.07    0.04    0.13
+  37                   CONDUIT     2.001     0  08:34      1.05    0.04    0.13
+  38                   CONDUIT     2.001     0  08:33      1.05    0.04    0.13
+  39                   CONDUIT     2.001     0  08:33      0.85    0.03    0.12
+  40                   CHANNEL     2.001     0  08:33      1.43    0.03    0.14
+  41                   CHANNEL     2.001     0  03:28      2.10    0.00    0.07
+  42                   CONDUIT     2.001     0  03:27      1.18    0.05    0.11
+  43                   CHANNEL     2.001     0  03:26      1.83    0.01    0.09
+  44                   CHANNEL     2.001     0  03:26      1.32    0.01    0.08
+  45                   CONDUIT     2.001     0  03:26      2.42    0.02    0.10
+  46                   CHANNEL     2.001     0  03:25      0.98    0.04    0.21
+  47                   CHANNEL     2.001     0  03:25      1.85    0.01    0.20
+  47a                  CONDUIT     2.270     0  00:00      2.77    0.03    0.15
+  49                   CHANNEL     2.001     0  03:24      1.38    0.06    0.24
+  50                   CHANNEL     2.001     0  09:54      3.51    0.22    0.27
+  51                   CHANNEL     2.001     0  09:53      0.75    0.01    0.15
+  52                   CONDUIT     2.002     0  04:08      1.59    0.07    0.14
+  53                   CHANNEL     2.036     0  05:33      2.32    0.03    0.15
+  54                   CHANNEL     0.701     0  03:23      0.34    0.01    0.21
+  55                   CONDUIT     0.701     0  03:22      0.56    0.01    0.06
+  56a                  CHANNEL     0.701     0  03:22      1.53    0.00    0.01
+  57                   CHANNEL     0.701     0  03:21      0.74    0.01    0.09
+  58                   CHANNEL     0.701     0  03:21      0.53    0.02    0.02
+  59                   CHANNEL     0.701     0  03:20      0.53    0.02    0.04
+  60                   CHANNEL     0.701     0  08:20      1.57    0.03    0.06
+  61                   CHANNEL     0.702     0  08:20      0.69    0.13    0.15
+  62                   CHANNEL     0.711     0  00:47      1.39    0.00    0.01
+  63                   CHANNEL     0.813     0  00:46      0.94    0.06    0.02
+  64                   CHANNEL     0.702     0  08:18      1.05    0.00    0.04
+  65                   CONDUIT     0.703     0  08:18      1.61    0.02    0.05
+  66                   CHANNEL     0.703     0  08:17      0.99    0.00    0.03
+  67                   CHANNEL     0.703     0  08:17      0.68    0.06    0.05
+  usgs_dis             CHANNEL     0.703     0  08:16      1.10    0.00    0.02
+  70                   CHANNEL     0.704     0  01:16      1.78    0.02    0.08
+  71                   CHANNEL     0.715     0  00:49      0.70    0.00    0.13
+  72                   CHANNEL     0.709     0  08:15      0.61    0.15    0.11
+  73                   CHANNEL     0.716     0  08:14      0.59    0.19    0.15
+  74                   CHANNEL     0.743     0  08:13      0.49    0.24    0.21
+  75                   CHANNEL     0.769     0  00:58      0.81    0.01    0.16
+  76                   CHANNEL     0.822     0  00:58      0.68    0.00    0.05
+  77                   CHANNEL     1.047     0  00:57      0.65    0.00    0.04
+  78                   CHANNEL     1.239     0  02:03      1.53    0.22    0.06
+  79                   CHANNEL     0.701     0  02:58      1.03    0.00    0.04
+  80                   CONDUIT     0.264     0  02:54      1.53    0.01    0.07
+  81                   CONDUIT     0.280     0  04:35      1.25    0.01    0.06
+  82                   CONDUIT     0.283     0  02:56      1.12    0.01    0.07
+  83                   CONDUIT     0.283     0  09:53      1.11    0.01    0.07
+  84                   CONDUIT     0.283     0  04:02      1.10    0.01    0.07
+  85                   CONDUIT     0.283     0  03:37      1.10    0.01    0.07
+  86                   CONDUIT     0.283     0  08:17      1.10    0.01    0.07
+  87                   CONDUIT     0.283     0  05:23      1.10    0.01    0.07
+  88                   CONDUIT     0.283     0  09:23      1.10    0.01    0.07
+  89                   CONDUIT     0.283     0  09:23      1.10    0.01    0.07
+  90                   CONDUIT     0.283     0  06:08      1.13    0.01    0.07
+  91                   CONDUIT     0.000     0  00:00      0.00    0.00    0.03
+  92                   CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  93                   CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  94                   CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  95                   CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  96                   CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  97                   CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  98                   CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  99                   CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  100                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  101                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  102                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  103                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  104                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  105                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  106                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  107                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  108                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  109                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  110                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  111                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  112                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  113                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  114                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  115                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  116                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  117                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  118                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  119                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  120                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  121                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  122                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  123                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  124                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  125                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  126                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  127                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  128                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  129                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  130                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  131                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  132                  CONDUIT     0.701     0  03:03      1.69    0.04    0.07
+  133                  CONDUIT     0.701     0  09:23      1.40    0.04    0.09
+  134                  CONDUIT     0.701     0  09:10      1.40    0.04    0.09
+  135                  CONDUIT     0.701     0  03:28      1.40    0.04    0.09
+  136                  CONDUIT     0.701     0  04:08      1.40    0.04    0.09
+  137                  CONDUIT     0.701     0  08:38      1.10    0.12    0.11
+  138                  CONDUIT     0.701     0  07:07      0.88    0.99    0.40
+  139                  CONDUIT     0.701     0  04:08      0.64    0.99    0.55
+  140                  CONDUIT     0.701     0  04:08      0.63    0.99    0.61
+  141                  CONDUIT     0.701     0  07:24      0.64    0.99    0.65
+  142                  CONDUIT     0.701     0  09:13      0.65    0.99    0.68
+  143                  CONDUIT     0.701     0  07:17      0.68    0.99    0.71
+  144                  CONDUIT     0.701     0  07:17      0.69    0.99    0.73
+  145                  CONDUIT     0.701     0  03:45      0.70    0.99    0.75
+  146                  CONDUIT     0.701     0  08:33      0.73    0.99    0.77
+  147                  CONDUIT     0.701     0  04:41      0.74    0.99    0.79
+  148                  CONDUIT     0.701     0  09:33      0.75    0.99    0.80
+  149                  CONDUIT     0.701     0  03:32      0.73    0.99    0.81
+  150                  CONDUIT     0.701     0  00:45      1.21    0.16    0.55
+  151                  CONDUIT     0.701     0  01:00      1.86    0.50    0.38
+  152                  CONDUIT     0.701     0  00:56      1.44    1.00    0.98
+  153                  CONDUIT     0.703     0  00:02      1.54    1.00    1.00
+  154                  CONDUIT     0.704     0  00:02      1.90    1.00    1.00
+  155                  CONDUIT     0.704     0  00:02      1.42    1.00    1.00
+  156                  CONDUIT     0.704     0  00:02      1.42    1.00    1.00
+  157                  CONDUIT     0.704     0  00:01      1.43    1.00    1.00
+  158                  CONDUIT     0.702     0  00:01      1.46    1.00    1.00
+  159                  CONDUIT     0.741     0  00:00      2.13    1.06    1.00
+  160                  CONDUIT     0.117     0  00:15      0.15    0.00    0.09
+  161                  CONDUIT     0.011     0  01:10      0.03    0.00    0.03
+  162                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  163                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  164                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  165                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  166                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  167                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  168                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  169                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  170                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  171                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  172                  CONDUIT     0.060     0  01:07      0.05    0.00    0.09
+  173                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  174                  CONDUIT     0.000     0  00:00      0.00    0.00    0.00
+  47b                  CONDUIT     2.216     0  00:00      1.91    0.07    0.15
+  48                   CONDUIT     2.170     0  00:00      1.56    0.07    0.17
+  56                   CONDUIT     0.701     0  03:22      0.85    0.20    0.09
+  80-a                 CONDUIT     0.436     0  02:54      1.65    0.01    0.06
+  81-a                 CONDUIT     0.421     0  02:56      1.41    0.02    0.05
+  82-a                 CONDUIT     0.417     0  03:18      1.27    0.02    0.06
+  83-a                 CONDUIT     0.417     0  03:04      1.28    0.02    0.06
+  84-a                 CONDUIT     0.417     0  04:02      1.28    0.02    0.06
+  85-a                 CONDUIT     0.417     0  03:17      1.28    0.02    0.06
+  86-a                 CONDUIT     0.417     0  03:29      1.28    0.02    0.06
+  87-a                 CONDUIT     0.417     0  05:23      1.28    0.02    0.06
+  88-a                 CONDUIT     0.417     0  09:23      1.28    0.02    0.06
+  89-a                 CONDUIT     0.417     0  09:23      1.28    0.02    0.06
+  90-a                 CONDUIT     0.417     0  06:08      1.28    0.02    0.06
+  69                   CONDUIT     0.704     0  01:16      1.52    0.01    0.05
+  
+  
+  ***************************
+  Flow Classification Summary
+  ***************************
+  
+  -------------------------------------------------------------------------------------
+                      Adjusted    ---------- Fraction of Time in Flow Class ---------- 
+                       /Actual         Up    Down  Sub   Sup   Up    Down  Norm  Inlet 
+  Conduit               Length    Dry  Dry   Dry   Crit  Crit  Crit  Crit  Ltd   Ctrl  
+  -------------------------------------------------------------------------------------
+  1                       1.00   0.00  0.06  0.00  0.94  0.00  0.00  0.00  0.93  0.00
+  2                       1.00   0.06  0.00  0.00  0.94  0.00  0.00  0.00  0.00  0.00
+  3                       1.00   0.06  0.00  0.00  0.94  0.00  0.00  0.00  0.06  0.00
+  4                       1.00   0.06  0.00  0.00  0.94  0.00  0.00  0.00  0.86  0.00
+  5                       1.00   0.06  0.00  0.00  0.94  0.00  0.00  0.00  0.01  0.00
+  6                       1.00   0.06  0.00  0.00  0.94  0.00  0.00  0.00  0.01  0.00
+  7                       1.00   0.05  0.00  0.00  0.95  0.00  0.00  0.00  0.01  0.00
+  8                       1.00   0.05  0.00  0.00  0.95  0.00  0.00  0.00  0.01  0.00
+  9                       1.00   0.05  0.00  0.00  0.95  0.00  0.00  0.00  0.01  0.00
+  10                      1.00   0.05  0.00  0.00  0.95  0.00  0.00  0.00  0.01  0.00
+  11                      1.00   0.05  0.00  0.00  0.95  0.00  0.00  0.00  0.01  0.00
+  12                      1.00   0.05  0.00  0.00  0.95  0.00  0.00  0.00  0.01  0.00
+  13                      1.00   0.05  0.00  0.00  0.95  0.00  0.00  0.00  0.01  0.00
+  14                      1.00   0.04  0.00  0.00  0.96  0.00  0.00  0.00  0.01  0.00
+  15                      1.00   0.04  0.00  0.00  0.96  0.00  0.00  0.00  0.01  0.00
+  16                      1.00   0.04  0.00  0.00  0.96  0.00  0.00  0.00  0.01  0.00
+  17                      1.00   0.04  0.00  0.00  0.96  0.00  0.00  0.00  0.01  0.00
+  18                      1.00   0.04  0.00  0.00  0.96  0.00  0.00  0.00  0.01  0.00
+  19                      1.00   0.04  0.00  0.00  0.96  0.00  0.00  0.00  0.01  0.00
+  20                      1.00   0.04  0.00  0.00  0.96  0.00  0.00  0.00  0.01  0.00
+  21                      1.00   0.03  0.00  0.00  0.97  0.00  0.00  0.00  0.01  0.00
+  22                      1.00   0.03  0.00  0.00  0.97  0.00  0.00  0.00  0.01  0.00
+  23                      1.00   0.03  0.00  0.00  0.97  0.00  0.00  0.00  0.02  0.00
+  24                      1.00   0.03  0.00  0.00  0.97  0.00  0.00  0.00  0.02  0.00
+  25                      1.00   0.03  0.00  0.00  0.97  0.00  0.00  0.00  0.01  0.00
+  26                      1.00   0.03  0.00  0.00  0.97  0.00  0.00  0.00  0.01  0.00
+  27                      1.00   0.03  0.00  0.00  0.97  0.00  0.00  0.00  0.02  0.00
+  28                      1.00   0.03  0.00  0.00  0.97  0.00  0.00  0.00  0.02  0.00
+  29                      1.00   0.02  0.00  0.00  0.98  0.00  0.00  0.00  0.02  0.00
+  30                      1.00   0.02  0.00  0.00  0.98  0.00  0.00  0.00  0.03  0.00
+  31                      1.00   0.02  0.00  0.00  0.98  0.00  0.00  0.00  0.03  0.00
+  32                      1.00   0.02  0.00  0.00  0.98  0.00  0.00  0.00  0.03  0.00
+  33                      1.00   0.02  0.00  0.00  0.98  0.00  0.00  0.00  0.03  0.00
+  34                      1.00   0.02  0.00  0.00  0.98  0.00  0.00  0.00  0.03  0.00
+  35                      1.00   0.01  0.00  0.00  0.99  0.00  0.00  0.00  0.04  0.00
+  36                      1.00   0.01  0.00  0.00  0.99  0.00  0.00  0.00  0.03  0.00
+  37                      1.00   0.01  0.00  0.00  0.99  0.00  0.00  0.00  0.05  0.00
+  38                      1.00   0.01  0.00  0.00  0.99  0.00  0.00  0.00  0.00  0.00
+  39                      1.00   0.01  0.00  0.00  0.99  0.00  0.00  0.00  0.00  0.00
+  40                      1.00   0.00  0.00  0.00  0.99  0.00  0.00  0.00  0.00  0.00
+  41                      1.00   0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.98  0.00
+  42                      1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  43                      1.00   0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00
+  44                      1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.99  0.00
+  45                      1.00   0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00
+  46                      1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  47                      1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  1.00  0.00
+  47a                     1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.10  0.00
+  49                      1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  50                      1.00   0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00
+  51                      1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  1.00  0.00
+  52                      1.00   0.00  0.00  0.00  0.09  0.91  0.00  0.00  0.00  0.00
+  53                      1.00   0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.18  0.00
+  54                      1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  55                      1.00   0.00  0.08  0.00  0.92  0.00  0.00  0.00  0.91  0.00
+  56a                     1.00   0.07  0.00  0.00  0.00  0.92  0.00  0.00  0.00  0.00
+  57                      1.00   0.07  0.00  0.00  0.93  0.00  0.00  0.00  0.91  0.00
+  58                      1.00   0.07  0.00  0.00  0.93  0.00  0.00  0.00  0.00  0.00
+  59                      1.00   0.07  0.00  0.00  0.93  0.00  0.00  0.00  0.00  0.00
+  60                      1.00   0.06  0.00  0.00  0.93  0.00  0.00  0.00  0.00  0.00
+  61                      1.00   0.06  0.00  0.00  0.94  0.00  0.00  0.00  0.00  0.00
+  62                      1.00   0.06  0.00  0.00  0.00  0.00  0.00  0.94  0.00  0.00
+  63                      1.00   0.06  0.00  0.00  0.94  0.00  0.00  0.00  0.00  0.00
+  64                      1.00   0.06  0.00  0.00  0.94  0.00  0.00  0.00  0.93  0.00
+  65                      1.00   0.06  0.00  0.00  0.00  0.94  0.00  0.00  0.00  0.00
+  66                      1.00   0.06  0.00  0.00  0.94  0.00  0.00  0.00  0.00  0.00
+  67                      1.00   0.05  0.00  0.00  0.95  0.00  0.00  0.00  0.00  0.00
+  usgs_dis                1.00   0.05  0.00  0.00  0.00  0.00  0.00  0.95  0.00  0.00
+  70                      1.00   0.05  0.00  0.00  0.01  0.94  0.00  0.00  0.00  0.00
+  71                      1.00   0.04  0.00  0.00  0.95  0.00  0.00  0.00  0.00  0.00
+  72                      1.00   0.04  0.00  0.00  0.96  0.00  0.00  0.00  0.00  0.00
+  73                      1.00   0.04  0.00  0.00  0.96  0.00  0.00  0.00  0.00  0.00
+  74                      1.00   0.03  0.00  0.00  0.97  0.00  0.00  0.00  0.00  0.00
+  75                      1.00   0.03  0.00  0.00  0.97  0.00  0.00  0.00  0.95  0.00
+  76                      1.00   0.03  0.00  0.00  0.97  0.00  0.00  0.00  0.95  0.00
+  77                      1.00   0.03  0.00  0.00  0.97  0.00  0.00  0.00  0.96  0.00
+  78                      1.00   0.03  0.00  0.00  0.74  0.24  0.00  0.00  0.00  0.00
+  79                      1.00   0.03  0.00  0.00  0.97  0.00  0.00  0.00  0.96  0.00
+  80                      1.00   0.03  0.00  0.00  0.00  0.97  0.00  0.00  0.96  0.00
+  81                      1.00   0.03  0.00  0.00  0.00  0.97  0.00  0.00  0.00  0.00
+  82                      1.00   0.02  0.00  0.00  0.00  0.97  0.00  0.00  0.94  0.00
+  83                      1.00   0.02  0.00  0.00  0.00  0.97  0.00  0.00  0.00  0.00
+  84                      1.00   0.02  0.00  0.00  0.00  0.98  0.00  0.00  0.00  0.00
+  85                      1.00   0.02  0.00  0.00  0.00  0.98  0.00  0.00  0.00  0.00
+  86                      1.00   0.02  0.00  0.00  0.00  0.98  0.00  0.00  0.00  0.00
+  87                      1.00   0.02  0.00  0.00  0.00  0.98  0.00  0.00  0.00  0.00
+  88                      1.00   0.02  0.00  0.00  0.00  0.98  0.00  0.00  0.00  0.00
+  89                      1.00   0.02  0.00  0.00  0.00  0.98  0.00  0.00  0.00  0.00
+  90                      1.00   0.02  0.00  0.00  0.00  0.98  0.00  0.00  0.00  0.00
+  91                      1.00   0.02  0.98  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  92                      1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  93                      1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  94                      1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  95                      1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  96                      1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  97                      1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  98                      1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  99                      1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  100                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  101                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  102                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  103                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  104                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  105                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  106                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  107                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  108                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  109                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  110                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  111                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  112                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  113                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  114                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  115                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  116                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  117                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  118                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  119                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  120                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  121                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  122                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  123                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  124                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  125                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  126                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  127                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  128                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  129                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  130                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  131                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  132                     1.00   0.02  0.00  0.00  0.00  0.98  0.00  0.00  0.97  0.00
+  133                     1.00   0.02  0.00  0.00  0.00  0.98  0.00  0.00  0.00  0.00
+  134                     1.00   0.02  0.00  0.00  0.00  0.98  0.00  0.00  0.00  0.00
+  135                     1.00   0.02  0.00  0.00  0.00  0.98  0.00  0.00  0.00  0.00
+  136                     1.00   0.01  0.00  0.00  0.00  0.98  0.00  0.00  0.00  0.00
+  137                     1.00   0.01  0.00  0.00  0.99  0.00  0.00  0.00  0.00  0.00
+  138                     1.00   0.01  0.00  0.00  0.99  0.00  0.00  0.00  0.00  0.00
+  139                     1.00   0.01  0.00  0.00  0.99  0.00  0.00  0.00  0.00  0.00
+  140                     1.00   0.01  0.00  0.00  0.99  0.00  0.00  0.00  0.00  0.00
+  141                     1.00   0.01  0.00  0.00  0.99  0.00  0.00  0.00  0.00  0.00
+  142                     1.00   0.01  0.00  0.00  0.99  0.00  0.00  0.00  0.00  0.00
+  143                     1.00   0.01  0.00  0.00  0.99  0.00  0.00  0.00  0.00  0.00
+  144                     1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  145                     1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  146                     1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  147                     1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  148                     1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  149                     1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  150                     1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  1.00  0.00
+  151                     1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  152                     1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  153                     1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  154                     1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  155                     1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  156                     1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  157                     1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  158                     1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  159                     1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  160                     1.00   0.01  0.01  0.00  0.98  0.00  0.00  0.00  0.00  0.00
+  161                     1.00   0.02  0.08  0.00  0.90  0.00  0.00  0.00  0.00  0.00
+  162                     1.00   0.10  0.90  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  163                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  164                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  165                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  166                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  167                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  168                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  169                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  170                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  171                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  172                     1.00   0.00  0.09  0.00  0.91  0.00  0.00  0.00  0.00  0.00
+  173                     1.00   0.10  0.90  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  174                     1.00   1.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00
+  47b                     1.00   0.00  0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00
+  48                      1.00   0.00  0.00  0.00  1.00  0.00  0.00  0.00  0.00  0.00
+  56                      1.00   0.07  0.00  0.00  0.93  0.00  0.00  0.00  0.00  0.00
+  80-a                    1.00   0.03  0.00  0.00  0.00  0.97  0.00  0.00  0.96  0.00
+  81-a                    1.00   0.03  0.00  0.00  0.00  0.97  0.00  0.00  0.95  0.00
+  82-a                    1.00   0.02  0.00  0.00  0.00  0.97  0.00  0.00  0.00  0.00
+  83-a                    1.00   0.02  0.00  0.00  0.00  0.97  0.00  0.00  0.00  0.00
+  84-a                    1.00   0.02  0.00  0.00  0.00  0.98  0.00  0.00  0.00  0.00
+  85-a                    1.00   0.02  0.00  0.00  0.00  0.98  0.00  0.00  0.00  0.00
+  86-a                    1.00   0.02  0.00  0.00  0.00  0.98  0.00  0.00  0.00  0.00
+  87-a                    1.00   0.02  0.00  0.00  0.00  0.98  0.00  0.00  0.00  0.00
+  88-a                    1.00   0.02  0.00  0.00  0.00  0.98  0.00  0.00  0.00  0.00
+  89-a                    1.00   0.02  0.00  0.00  0.00  0.98  0.00  0.00  0.00  0.00
+  90-a                    1.00   0.02  0.00  0.00  0.00  0.98  0.00  0.00  0.00  0.00
+  69                      1.00   0.05  0.00  0.00  0.00  0.95  0.00  0.00  0.00  0.00
+  
+  
+  *************************
+  Conduit Surcharge Summary
+  *************************
+  
+  ----------------------------------------------------------------------------
+                                                           Hours        Hours 
+                         --------- Hours Full --------   Above Full   Capacity
+  Conduit                Both Ends  Upstream  Dnstream   Normal Flow   Limited
+  ----------------------------------------------------------------------------
+  152                         0.01      9.95      0.01      0.01         0.01
+  153                         9.95      9.96      9.95      0.01         0.01
+  154                         9.96      9.96      9.96      0.01         0.01
+  155                         9.96      9.97      9.96      0.01         0.01
+  156                         9.97      9.98      9.97      0.01         0.01
+  157                         9.98      9.98      9.98      0.01         0.01
+  158                         0.01      0.01      9.98      0.01         0.01
+  159                         0.01      0.01      0.01      0.01         0.01
+  
+
+  Analysis begun on:  Mon Sep 26 17:17:04 2022
+  Analysis ended on:  Mon Sep 26 17:19:05 2022
+  Total elapsed time: 00:02:01

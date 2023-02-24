@@ -1,0 +1,77 @@
+=====================================================================
+EPA SWMM 5.1 RELEASE NOTES
+=====================================================================
+
+This file contains information concerning Version 5.1 of the EPA
+Storm Water Management Model (SWMM). A complete Users Manual as
+well as full source code and other updates are available at
+www.epa.gov/water-research/storm-water-management-model-swmm.
+
+=====================================================================
+INSTALLATION
+
+To install EPA SWMM 5.1 run the setup program swmm51xxx_setup.exe
+where xxx contains the current build number. It will place the
+following files into the application folder you designate:
+  epaswmm5.exe  -- the Windows user interface for SWMM
+  epaswmm5.chm  -- the SWMM 5 help file
+  swmm5.dll     -- the SWMM 5 computational engine
+  swmm5.exe     -- the command line version of SWMM 5
+  vcomp100.dll  -- OpenMP multi-threading library
+  tutorial.chm  -- an online tutorial for SWMM 5
+  notes.txt     -- this file
+
+The setup program will also create a Start Menu group whose default
+name is EPA SWMM 5.1. From this menu group select the item named
+EPA SWMM 5.1 to launch the program.
+
+=====================================================================
+EXAMPLE DATA SETS
+
+Several example data sets have been included with  this package. They
+are placed in a sub-folder named EPA SWMM Projects\Examples in your
+My Documents folder. Each example consists of a .INP file that holds
+the model data and a .TXT file with suggestions on running it.
+
+* EXAMPLE1.INP models runoff quantity and quality from a small
+  watershed and its routing through a network of storm sewers.
+  It can be run in either single event mode or in continuous
+  mode using the companion rainfall file sta310301.dat.
+
+* EXAMPLE2.INP is Example 1 of the 1988 EXTRAN Users Manual. It
+  illustrates how SWMM 5 can graphically compare its results to
+  observed data stored in a text file (extran1.dat).
+
+* EXAMPLE3.INP illustrates the use of the rule-based controls
+  feature in SWMM 5 for simulating real-time control.
+
+* EXAMPLE4.INP shows how the LID controls feature in SWMM 5 was
+  used to reduce runoff produced froma 29 acre mixed development
+  site.
+
+* EXAMPLE5.INP shows how to setup a simple groundwater model in
+  SWMM.
+
+* EXAMPLE6.INP models a culvert with roadway overtopping and
+  upstream storage using the FHWA HDS-5 methodology.
+
+=====================================================================
+TERMS OF USE
+
+EPA SWMM 5 is public domain software that may be freely copied and
+distributed.
+
+=====================================================================
+DISCLAIMER
+
+The software product is provided on an "as-is" basis. US EPA makes no
+representations or warranties of any kind and expressly disclaim all
+other warranties express or implied, including, without limitation,
+warranties of merchantability or fitness for a particular purpose.
+Although care has been used in preparing the software product, US EPA
+disclaim all liability for its accuracy or completeness, and the user
+shall be solely responsible for the selection, use,efficiency and
+suitability of the software product. Any person who uses this product
+does so at his sole risk and without liability to US EPA. US EPA shall
+have no liability to users for the infringement of proprietary rights
+by the software product or any portion thereof.
