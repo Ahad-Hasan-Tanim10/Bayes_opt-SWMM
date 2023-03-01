@@ -1,5 +1,7 @@
 # Bayes_Opt-SWMM
-This codes are developed to optimize SWMM model parameters.
+This codes are developed to optimize SWMM model parameters. Please follow the 'requirements.txt' to install the package. 
+
+
 The parameters are associated with subcatchments and conduits
 3 events has been selected to optimize to see the variation of parameters
 
