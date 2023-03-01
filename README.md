@@ -1,5 +1,5 @@
 # Bayes_Opt-SWMM
-This codes are developed to optimize SWMM model parameters. Please follow the 'requirements.txt' to install the package. 
+These codes are developed to optimize SWMM model parameters. Please follow the 'requirements.txt' to install the package. 
 
 
 A project overview can be found in this pdf
