@@ -3,6 +3,9 @@
 Download all data from a list of Adafruit IO feeds. Change constants in this
 file in the CONFIGURATION section before you run the script.
 
+The URL, AIO_KEY, USERNAME and API key has to be updated before running the code. Make sure the real time sensors are properly deployed
+
+
 Usage:
 
     $ START="2019-05-01T00:00Z" END="2019-06-01T00:00Z" \
