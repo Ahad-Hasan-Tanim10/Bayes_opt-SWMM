@@ -1,5 +1,5 @@
 # Bayes_Opt-SWMM
-These codes are developed to optimize SWMM model parameters. Please follow the 'requirements.txt' to install the package. 
+These codes are developed to optimize SWMM model parameters for real time operation and urban flood prediction. Please follow the 'requirements.txt' to install the package. 
 
 
 1) A project overview can be found in this pdf
